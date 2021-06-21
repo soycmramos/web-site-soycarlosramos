@@ -1,0 +1,27 @@
+.about-me {
+	background-color: transparent;
+	&__content {
+		align-items: center;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: .5em;
+	}
+
+	.avatar {
+		width: 15rem;
+		border-radius: 50%;
+		border: 1px solid #ccc;
+		@include from(lg) {
+			width: 20rem;
+		}
+	}
+
+	.biography {
+		font-size: 1.1em;
+	}
+}

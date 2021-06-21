@@ -1,0 +1,1 @@
+exports.render_index = (req, res) => res.render('index', { title: "Hola mundo" })

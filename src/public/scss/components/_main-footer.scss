@@ -1,0 +1,39 @@
+.main-footer {
+  background-color: var(--color-2);
+  padding: 1em 0;
+  
+  &__content {
+    
+    .menu-social-network {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+
+      @include from(lg) {
+        display: flex;
+      }
+
+      &__item {
+        margin-bottom: 0.25rem;
+        @include from(lg) {
+          margin-bottom: 0;
+          margin-right: 1.5rem;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      &__link {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        line-height: 2;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

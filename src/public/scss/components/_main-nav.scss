@@ -1,0 +1,18 @@
+.main-menu {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  // &__item { border-bottom: 1px solid var(--color-border); }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  img {
+    --img-max-width: 2.5rem;
+    filter: opacity(75%);
+  }
+}

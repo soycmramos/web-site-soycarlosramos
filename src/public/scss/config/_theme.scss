@@ -1,0 +1,45 @@
+body {
+	background-color: var(--color-bg-body);
+	color: var(--color-text);
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.button {
+	--padding: .5em;
+	--color: #aaa;
+	text-decoration: none;
+	display: inline-block;
+	padding: var(--padding) calc(var(--padding) * 2);
+	border-radius: .25em;
+	background-color: var(--color);
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+	outline: none;
+	line-height: 2;
+	transition: all .2s;
+
+	&:active {
+		transform: scale(.99);
+	}
+}
+
+.button-primary {
+	--color: var(--color-1);
+}
+
+.button-secondary {
+	--color: var(--color-2);
+}
+
+.ghost {
+	background-color: transparent;
+	color: var(--color);
+	border: 1px solid;
+
+	&:hover {
+		background-color: var(--color);
+		color: #fff;
+	}
+}

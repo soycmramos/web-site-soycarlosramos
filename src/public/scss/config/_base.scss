@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: var(--height-main-header) 1fr var(--height-main-footer);
+	min-height: 100vh;
+	margin-top: var(--height-main-header);
+}
+
+img {
+	display: block;
+	max-width: var(--img-max-width);
+}

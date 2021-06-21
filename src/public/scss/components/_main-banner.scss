@@ -1,0 +1,44 @@
+.main-banner {
+	background-color: #fff;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90% );
+
+	&__content {
+		@include from(lg) {
+			align-items: center;
+		}
+	}
+
+	&__copy {
+		margin-bottom: 1.5rem;
+		text-align: center;
+		@include from(lg) {
+			margin-bottom: 0;
+			text-align-last: left;
+		}
+		
+		span {
+			font-size: 3.5em;
+			font-weight: 600;
+
+			@include from(lg) {
+				font-size: 5em;
+			}
+		}
+		
+		h1 {
+			font-size: 2.25em;
+			margin: 0;
+			font-weight: 300;
+
+			@include from(lg) {
+				font-size: 3em;
+			}
+		}
+
+		.profession {
+			margin: .75em 0;
+			font-size: 1.1em;
+			font-style: italic;
+		}
+	}
+}
