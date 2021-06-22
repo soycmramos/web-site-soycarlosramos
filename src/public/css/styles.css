@@ -10,7 +10,8 @@
   --max-width: 75em;
   --padding-l-section: 1.5rem 0;
   --height-main-header: 4rem;
-  --height-main-footer: min-content(8rem);
+  --height-main: 1fr;
+  --height-main-footer: 4rem;
   --img-max-width: 100%;
   --z-back: -10;
   --z-normal: 1;
@@ -27,12 +28,17 @@ body {
   margin: var(--height-main-header) 0 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: var(--height-main-header) 1fr var(--height-main-footer);
+  grid-template-rows: var(--height-main-header) var(--height-main) var(--height-main-footer);
   min-height: 100vh; }
 
 img {
   display: block;
   max-width: var(--img-max-width); }
+
+main {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2; }
 
 .l-block {
   width: var(--width);
@@ -932,6 +938,9 @@ body {
   color: var(--color-1); }
 
 .main-header {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
   height: var(--height-main-header);
   background-color: #fff;
   border-bottom: 1px solid var(--color-border);
@@ -1029,6 +1038,9 @@ body {
     margin: 0; }
 
 .main-footer {
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
   background-color: var(--color-2);
   padding: 1em 0; }
   .main-footer__content .list-social-network {
