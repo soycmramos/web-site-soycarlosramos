@@ -1,18 +1,17 @@
 // Settings
-  @import "./config/variables";
-  @import "./config/base";
-  @import "./config/mixins";
-  @import "./config/layout";
-  @import "./config/fonts";
-  @import "./config/theme";
+	@import "./config/variables";
+	@import "./config/base";
+	@import "./config/mixins";
+	@import "./config/layout";
+	@import "./config/fonts";
+	@import "./config/theme";
 
 // Components
-  @import "./components/main-logo";
-  @import "./components/main-header";
-  @import "./components/main-nav";
-  @import "./components/btn-bars";
-  @import "./components/_main-banner";
-  @import "./components/about-me";
-  @import "./components/skills";
-  @import "./components/main-footer";
-  @import "./components/form-contact";
+	@import "./components/main-logo";
+	@import "./components/main-header";
+	@import "./components/main-nav";
+	@import "./components/_main-banner";
+	@import "./components/about-me";
+	@import "./components/skills";
+	@import "./components/main-footer";
+	@import "./components/form-contact";
