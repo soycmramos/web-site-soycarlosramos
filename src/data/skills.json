@@ -1,0 +1,42 @@
+[
+	{
+		"title": "HTML",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/html.png"
+	},
+	{
+		"title": "CSS",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/css.png"
+	},
+	{
+		"title": "SASS",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/sass.png"
+	},
+	{
+		"title": "Javascrip",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129456/web-site-carlos-ramos/js.png"
+	},
+	{
+		"title": "Node",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/node.png"
+	},
+	{
+		"title": "React",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/react.png"
+	},
+	{
+		"title": "PHP",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129456/web-site-carlos-ramos/php.png"
+	},
+	{
+		"title": "MySQL",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129456/web-site-carlos-ramos/mysql.png"
+	},
+	{
+		"title": "Java",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/java.png"
+	},
+	{
+		"title": "Git",
+		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/git.png"
+	}
+]

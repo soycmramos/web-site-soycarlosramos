@@ -17,6 +17,7 @@
 		}
 		
 		img {
+			width: 60%;
 			@include from(lg) { --img-max-width: 50%; }
 			filter: opacity(75%);
 			transition: all .1s;

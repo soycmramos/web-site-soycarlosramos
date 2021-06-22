@@ -1,0 +1,10 @@
+<section class="l-section skills">
+	<h2>Habilidades</h2>
+	<div class="l-block l-grid s-grid-2 m-grid-3 lg-grid-5 skills__content">
+		<% if (skills) { %>
+			<% skills.map(skill => { %>
+				<%- include('./card-skill.ejs', { img: skill.img, title: skill.title }) %>
+			<% }) %>
+		<% } %>
+	</div>
+</section>

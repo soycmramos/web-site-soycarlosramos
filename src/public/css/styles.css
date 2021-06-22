@@ -1018,6 +1018,7 @@ body {
   .skills__content figure {
     text-align: center; }
   .skills__content img {
+    width: 60%;
     filter: opacity(75%);
     transition: all .1s;
     margin-right: auto;
