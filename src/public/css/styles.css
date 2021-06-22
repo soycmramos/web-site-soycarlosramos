@@ -1004,33 +1004,24 @@ body {
   .about-me .biography {
     font-size: 1.1em; }
 
-.skills h2 {
+.card-skill {
   text-align: center;
-  font-size: 2.5em;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: .5em; }
-
-.skills__content {
-  text-align: center;
-  justify-content: center;
-  --max-width: 1000px; }
-  .skills__content figure {
-    text-align: center; }
-  .skills__content img {
-    width: 60%;
+  border: 1px solid var(--color-border);
+  padding: 1em 0;
+  border-radius: .25em;
+  transition: all .1s; }
+  .card-skill:hover {
+    transform: scale(1.02); }
+  .card-skill__img {
+    --img-max-width: 40%;
     filter: opacity(75%);
-    transition: all .1s;
     margin-right: auto;
     margin-left: auto; }
     @media screen and (min-width: 64em) {
-      .skills__content img {
-        --img-max-width: 50%; } }
-    .skills__content img:hover {
-      filter: none;
-      transform: scale(1.02); }
-  .skills__content meter {
-    border: none; }
+      .card-skill__img {
+        --img-max-width: 20% ; } }
+  .card-skill__text {
+    margin: 0; }
 
 .main-footer {
   background-color: var(--color-2);
