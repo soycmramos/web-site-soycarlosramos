@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-  <%- include('./partials/head.ejs') %>
+<html lang="es">
+<%- include('./partials/head.ejs', { title: 'Contacto - Carlos Mario Ramos Pérez' }) %>
 <body>
-  <%- include('./partials/main-header.ejs') %>
-  <main>
-    <h1>Contacto</h1>
-  </main>
-  <%- include('./partials/main-footer.ejs') %>
+	<%- include('./partials/main-header.ejs') %>
+	<main>
+		<%- include('./partials/form-contact.ejs') %>
+	</main>
+	<%- include('./partials/main-footer.ejs') %>	
 </body>
 </html>

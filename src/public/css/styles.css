@@ -9,15 +9,16 @@
   --width: 90%;
   --max-width: 75em;
   --padding-l-section: 1.5rem 0;
-  --height-main-header: 4rem;
-  --height-main: 1fr;
+  --height-main-header: 3.5rem;
   --height-main-footer: 4rem;
   --img-max-width: 100%;
   --z-back: -10;
   --z-normal: 1;
   --z-tooltip: 10;
   --z-fixed: 100;
-  --z-modal: 1000; }
+  --z-modal: 1000;
+  --font-body: 'Poppins', sans-serif
+; }
 
 *,
 *::before,
@@ -25,10 +26,10 @@
   box-sizing: border-box; }
 
 body {
-  margin: var(--height-main-header) 0 0;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: var(--height-main-header) var(--height-main) var(--height-main-footer);
+  grid-template-rows: var(--height-main-header) 1fr var(--height-main-footer);
   min-height: 100vh; }
 
 img {
@@ -894,7 +895,7 @@ main {
 body {
   background-color: var(--color-bg-body);
   color: var(--color-text);
-  font-family: 'Poppins', sans-serif; }
+  font-family: var(--font-body); }
 
 .button {
   --padding: .5em;
@@ -1061,19 +1062,49 @@ body {
       cursor: pointer;
       font-size: 1.5em; }
 
+.contact {
+  padding: 0; }
+  .contact i {
+    font-size: 4em;
+    margin: 0;
+    color: var(--color-1); }
+  .contact h1 {
+    font-size: 1.5em;
+    margin: 0; }
+  .contact h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 0 0 1em 0; }
+  .contact .inputs {
+    margin-bottom: .5rem; }
+
 .form-contact {
-  padding: 1em;
-  text-align: center; }
+  --padding: .5em;
+  --font-size: 1.1em;
+  width: 100%;
+  max-width: 40rem;
+  padding: var(--padding); }
   .form-contact input {
     display: block;
     width: 100%;
-    padding: 0.5em;
-    font-size: 1.1em;
-    margin-bottom: 0.25rem;
+    padding: var(--padding);
+    font-size: var(--font-size);
     border: 1px solid var(--color-border);
     outline: none; }
     .form-contact input[type="submit"] {
       background-color: var(--color-1);
       color: #fff;
       font-weight: 600;
-      border: none; }
+      border: none;
+      cursor: pointer; }
+      .form-contact input[type="submit"]:active {
+        transform: scale(0.99); }
+  .form-contact textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 6rem;
+    font-family: var(--font-body);
+    font-size: var(--font-size);
+    margin-bottom: .5rem;
+    padding: var(--padding);
+    border: 1px solid var(--color-border); }
