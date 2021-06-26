@@ -1,9 +1,15 @@
-.contact {
-	padding: 0;
+.page-contact {
+	display: grid;
+	place-items: center;
+	
+	&__content {
+		text-align: center;
+		background-color: var(--color-bg-color);
+	}
 	
 	i {
-		font-size: 4em;
-		margin: 0;
+		font-size: 5em;
+		line-height: 0;
 		color: var(--color-1);
 	}
 
@@ -23,6 +29,8 @@
 	}
 
 }
+
+// Formulario de contacto
 
 .form-contact {
 	--padding: .5em;
@@ -61,5 +69,6 @@
 		margin-bottom: .5rem;
 		padding: var(--padding);
 		border: 1px solid var(--color-border);
+		outline: none;
 	}
 }

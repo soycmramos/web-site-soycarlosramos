@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head.ejs', {title: 'Error'}) %>
+<body>
+  <%- include('./partials/main-header.ejs') %>
+  <main>
+    <div class="l-section page-404">
+      <div class="l-block page-404__content">
+        <i class="icon-alert-danger"></i>
+        <h1 class="page-404__title">Oops!</h1>
+        <h2 class="page-404__error">404</h2>
+        <p class="page-404__description">Página no econtrada</p>
+        <a href="/" class="button button-primary">¡Sácame de aquí!</a>
+      </div>
+    </div>
+  </main>
+  <%- include('./partials/main-footer.ejs') %>
+</body>
+</html>

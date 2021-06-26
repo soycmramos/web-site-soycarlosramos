@@ -1,19 +1,20 @@
 .main-banner {
 	background-color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90% );
+	position: relative;
 
 	&__content {
 		@include from(lg) {
 			align-items: center;
 		}
 	}
-
+	
 	&__copy {
 		margin-bottom: 1.5rem;
 		text-align: center;
 		@include from(lg) {
 			margin-bottom: 0;
-			text-align-last: left;
+			text-align: left;
 		}
 		
 		span {
@@ -39,6 +40,14 @@
 			margin: .75em 0;
 			font-size: 1.1em;
 			font-style: italic;
+		}
+	}
+
+	&__img {
+		@include from-to(m, lg) {
+			--img-max-width: 35rem;
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 }

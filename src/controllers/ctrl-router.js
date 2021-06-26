@@ -8,3 +8,6 @@ exports.render_contact = (req, res) => {
   res.render('contact')
   return
 }
+
+// Error 404 - Not found
+exports.render_404 = (req, res) => res.render('404')
