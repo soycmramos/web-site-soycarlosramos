@@ -1018,7 +1018,10 @@ body {
       --img-max-width: 75%; }
       @media screen and (min-width: 40em) and (max-width: 64em) {
         .about-me__content .avatar {
-          --img-max-width: 20rem; } }
+          --img-max-width: 45%; } }
+      @media screen and (min-width: 64em) {
+        .about-me__content .avatar {
+          --img-max-width: 60%; } }
     .about-me__content .biography {
       font-size: 1.1em; }
 

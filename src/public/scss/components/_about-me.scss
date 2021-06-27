@@ -16,7 +16,11 @@
 			border: 1px solid #ccc;
 			--img-max-width: 75%;
 			@include from-to(m, lg) {
-				--img-max-width: 20rem;
+				--img-max-width: 45%;
+			}
+
+			@include from(lg) {
+				--img-max-width: 60%;
 			}
 		}
 
