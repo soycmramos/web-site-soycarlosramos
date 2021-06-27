@@ -1,0 +1,27 @@
+[class^="alert-"] {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+  border: 2px solid;
+}
+
+.alert--success {
+  background-color: var(--color-success);
+  color: darken($color-success, 25%);
+}
+
+.alert--danger {
+  background-color: var(--color-danger);
+  color: darken($color-danger, 25%);
+}
+
+.alert--warning {
+  background-color: var(--color-warning);
+  color: darken($color-warning, 25%);
+}
+
+.alert--info {
+  background-color: var(--color-info);
+  color: darken($color-info, 25%);
+}

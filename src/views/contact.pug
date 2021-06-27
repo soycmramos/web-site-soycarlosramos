@@ -5,9 +5,10 @@ block main
 			i.icon-email
 			h1 ¿Quieres contactarme?
 			h2 ¡Déjame tu mensaje y conversemos!
-			form(action="#" method="POST").form-contact.mx-auto#form-contact
+			form(action="/contact" method="POST").form-contact.mx-auto#form-contact
+				include ./includes/alert
 				.l-grid.m-grid-2.gap-05.inputs
-					input(type="text" name="name" placeholder="¿Cuál es tu nombre?" required autocomplete="off" autofocus)
-					input(type="email" name="email" placeholder="¿Cuál es tu correo?" required autocomplete="off")
+					input(type="text" name="name" placeholder="¿Cuál es tu nombre?" autocomplete="off" autofocus)
+					input(type="email" name="email" placeholder="¿Cuál es tu correo?" autocomplete="off")
 				textarea(name="message" placeholder="Deja tu mensaje...")
 				input(type="submit" value="Enviar")
