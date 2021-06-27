@@ -1,0 +1,7 @@
+section.l-section.skills
+	.l-block.skills__content
+		h2 Habilidades
+		.l-grid.gap-05.s-grid-2.m-grid-3.lg-grid-5
+			if skills
+				each skill in skills
+					include ./card-skill

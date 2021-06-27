@@ -1,0 +1,13 @@
+extends ./includes/template
+block main
+	.l-section.page-contact
+		.l-block.page-contact__content
+			i.icon-email
+			h1 ¿Quieres contactarme?
+			h2 ¡Déjame tu mensaje y conversemos!
+			form(action="#" method="POST").form-contact.mx-auto#form-contact
+				.l-grid.m-grid-2.gap-05.inputs
+					input(type="text" name="name" placeholder="¿Cuál es tu nombre?" required autocomplete="off" autofocus)
+					input(type="email" name="email" placeholder="¿Cuál es tu correo?" required autocomplete="off")
+				textarea(name="message" placeholder="Deja tu mensaje...")
+				input(type="submit" value="Enviar")
