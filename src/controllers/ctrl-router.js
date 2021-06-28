@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer')
+const path = require('path')
 
 // routes
 exports.render_index = (req, res) => {
@@ -13,7 +14,17 @@ exports.render_contact = (req, res) => {
 	return
 }
 
-// Error 404 - Not found
+exports.render_emailSuccess = (req, res) => {
+	res.render('email-success')
+}
+
+exports.render_cv = (req, res) => {
+	res.setHeader("Content-Type", "Application/pdf")
+	res.sendFile(path.resolve(__dirname, '../data/cv-carlos-ramos.pdf'))
+	return
+}
+
+// Error 404 - Page not found
 exports.render_404 = (req, res) => res.render('404')
 
 // contact form
@@ -32,12 +43,11 @@ exports.handleContactForm = (req, res, next) => {
 		res.redirect('/contacto')
 		return
 	}
+
+	next()
 }
 
-
-
-
-
+//Send email
 exports.sendMail = async (req, res) => {
 	const { name, email, message } = req.body
 	let transporter = nodemailer.createTransport({
@@ -46,24 +56,23 @@ exports.sendMail = async (req, res) => {
 		secure: false,
 		auth: {
 			user: 'carlosmarioramos34@gmail.com',
-			pass: '@Cr43188',
+			pass: process.env.EMAIL_PASS
 		}
 	})
 
 	try {
-		let info = await transporter.sendMail({
+		await transporter.sendMail({
 			from: `${name} <${email}>`,
 			to: "carlosmarioramos34@gmail.com",
 			subject: `¡${name} te ha contactado desde tu blog! <${email}>`,
 			text: message
 		})
-		console.log("Message sent: %s", info.messageId)
+
+		res.redirect('/email-success')
+		return
 	} catch (error) {
 		console.log(error)
 		res.redirect('/')
 		return
 	}
-
-	res.redirect('/')
-	return 
 }

@@ -907,6 +907,7 @@ body {
   --padding: .45rem;
   --color: #aaa;
   text-decoration: none;
+  text-align: center;
   display: inline-block;
   padding: var(--padding) calc(var(--padding) * 2.5);
   border-radius: .25em;
@@ -963,6 +964,10 @@ body {
 .alert--info {
   background-color: var(--color-info);
   color: #4da4ff; }
+
+.main-logo {
+  text-decoration: none;
+  color: var(--color-bg-color); }
 
 .main-header {
   display: grid;
@@ -1173,3 +1178,16 @@ body {
   .page-404__error {
     font-size: 2.25em;
     margin: 0; }
+
+.page-email-success {
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .page-email-success__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .page-email-success__content img {
+      --img-max-width: 50%; }
+    .page-email-success__content p {
+      font-size: 1.5em; }

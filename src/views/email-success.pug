@@ -1,0 +1,9 @@
+extends ./includes/template
+append config
+  - pageTitle = '¡Correo enviado!'
+block main
+  section.l-section.page-email-success
+    .l-block.page-email-success__content
+      img(src="https://res.cloudinary.com/cr-cloud/image/upload/v1624904531/web-site-carlos-ramos/sent.png", alt="Correo enviado").page-email-success__img
+      p.page-email-success__description ¡Mensaje enviado!
+      a(href="/").button.button-primary ¡Ok!
