@@ -55,8 +55,12 @@ exports.sendMail = async (req, res) => {
 		port: 587,
 		secure: false,
 		auth: {
+			type: 'OAuth2',
 			user: 'carlosmarioramos34@gmail.com',
-			pass: process.env.EMAIL_PASS
+			clientId: process.env.CLIENT_ID,
+			clientSecret: process.env.CLIENT_SECRET,
+			refreshToken: process.env.REFRESH_TOKEN,
+			accessToken: process.env.ACCESS_TOKEN
 		}
 	})
 
