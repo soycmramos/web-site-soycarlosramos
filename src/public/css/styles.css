@@ -1059,8 +1059,8 @@ body {
     .about-me__content .biography {
       font-size: 1.1em; }
 
-.skills {
-  max-width: calc(var(--max-width) - 4rem); }
+.skills__content {
+  max-width: calc(var(--max-width) - 12rem); }
   .skills__content h2 {
     text-align: center;
     font-size: 2.25em;

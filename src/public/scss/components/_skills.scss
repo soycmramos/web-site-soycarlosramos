@@ -1,6 +1,6 @@
 .skills {
-	max-width: calc(var(--max-width) - 4rem);
 	&__content {
+		max-width: calc(var(--max-width) - 12rem);
 		h2 {
 			text-align: center;
 			font-size: 2.25em;
