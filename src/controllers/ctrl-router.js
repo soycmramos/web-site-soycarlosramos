@@ -37,7 +37,7 @@ exports.handleContactForm = (req, res, next) => {
 	if (!name || !email || !message) {
 		req.flash('alert', {
 			type: "danger",
-			text: 'Debes completar todos los campos.'
+			text: 'Debes completar todos los campos'
 		})
 
 		res.redirect('/contacto')
