@@ -24,16 +24,8 @@
 		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/react.png"
 	},
 	{
-		"title": "PHP",
-		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129456/web-site-carlos-ramos/php.png"
-	},
-	{
 		"title": "MySQL",
 		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129456/web-site-carlos-ramos/mysql.png"
-	},
-	{
-		"title": "Java",
-		"img": "https://res.cloudinary.com/cr-cloud/image/upload/v1624129457/web-site-carlos-ramos/java.png"
 	},
 	{
 		"title": "Git",
