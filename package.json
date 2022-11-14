@@ -7,7 +7,7 @@
 	},
 	"version": "1.0.0",
 	"main": "index.js",
-	"repository": "https://github.com/carlosmarioramos/soycarlosramos",
+	"repository": "https://github.com/carlosmarioramos/web-site-soycarlosramos",
 	"author": "Carlos Ramos <carlosmarioramos34@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
